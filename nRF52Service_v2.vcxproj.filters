@@ -1,0 +1,1547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{75de3647-446f-43b9-845b-393175660822}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{bbf696b9-aafd-467a-999f-637923bebc6c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{0ec42981-5640-4304-9b33-292eb4745e47}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{8cb562f6-7fb5-4c07-812e-0c2cdfb32728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Advertising Module">
+      <UniqueIdentifier>{a242762b-ae09-4840-a0bf-008a92cd3503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Battery Service">
+      <UniqueIdentifier>{2949ca95-8b77-4387-b99a-f061756abe05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Common">
+      <UniqueIdentifier>{77a2ea4b-abea-4654-b470-58254e973650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Device Information Service">
+      <UniqueIdentifier>{0adecdbc-8e53-459b-8876-6210263e9bcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Human Interface Device Service">
+      <UniqueIdentifier>{d9bbf8ee-3649-4096-996a-d611f5a36231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Link Context Manager">
+      <UniqueIdentifier>{5a681896-961e-49d7-abca-dacbd905685a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Queued Writes module">
+      <UniqueIdentifier>{cc4c3d99-0a5c-4a79-89ef-4b42d27d70ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\GATT">
+      <UniqueIdentifier>{58ae66f9-e4dc-4645-b59a-f91a7679ed1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Legacy Peripheral Drivers">
+      <UniqueIdentifier>{033ab0f3-14d2-42cc-9436-323e2b70ba6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Utils">
+      <UniqueIdentifier>{51cd5e2a-6ce8-4bf4-a676-4f7ccdacb3b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Boards">
+      <UniqueIdentifier>{7911f77d-1a41-4eec-8a20-dba7194ad0f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Libraries">
+      <UniqueIdentifier>{374fd215-93b1-4240-8e60-7d1126505b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Peer Manager">
+      <UniqueIdentifier>{bc0cf299-a027-4897-9447-c634fadc57fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Peripheral Drivers">
+      <UniqueIdentifier>{a5c83a44-a079-44c3-9511-8c3bf24ef801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Peripheral Drivers (Old)">
+      <UniqueIdentifier>{a5c658c1-a15a-4b56-86a7-54ce72d0b16a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{cd078ca4-6267-4c45-b668-69e2c247c5b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Advertising Module">
+      <UniqueIdentifier>{f329fd7a-5358-44c8-8ee7-ae42cf7d8331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Battery Service">
+      <UniqueIdentifier>{c19237bc-bd50-4599-88c6-7d66d80a207e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Common">
+      <UniqueIdentifier>{3f72f6d9-7876-4be7-989e-c76ab3bd94ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Device Information Service">
+      <UniqueIdentifier>{6c329e3f-ab4e-4e44-a5f1-999ed109bd8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Human Interface Device Service">
+      <UniqueIdentifier>{4bd1880d-e6c9-4cf0-89d3-6e2249afd372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Link Context Manager">
+      <UniqueIdentifier>{c7de62f5-061c-4eea-8a2b-387269b251e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Queued Writes module">
+      <UniqueIdentifier>{31a65543-46d8-4a54-a86d-fe3dd546872e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\GATT">
+      <UniqueIdentifier>{a21cf14e-1681-4d75-bba1-d2ee05ca909f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Legacy Peripheral Drivers">
+      <UniqueIdentifier>{27206e85-e958-492f-9d1a-dc1f25dd3c55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Utils">
+      <UniqueIdentifier>{4c0c92c9-173a-49d2-9a67-6495c28dc3fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Boards">
+      <UniqueIdentifier>{b2612278-3616-45d0-8370-81af60095454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Libraries">
+      <UniqueIdentifier>{2fdae2e1-2c6b-49b4-917a-8b4676f99594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Peer Manager">
+      <UniqueIdentifier>{17d6db8a-ad35-45d3-91ce-5dd5ac6f2e21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Peripheral Drivers">
+      <UniqueIdentifier>{444f2905-592f-4277-ae31-919b6f4a6952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Peripheral Drivers (Old)">
+      <UniqueIdentifier>{123f1b0c-b12c-4e31-9e96-64a417d42342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{ae9c75f3-d315-429a-95af-3e386685bebb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nrf5x.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\system_nrf52840.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\gcc_startup_nrf52840.S">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\ble_advertising\ble_advertising.c">
+      <Filter>Source files\Device-specific files\BLE Advertising Module</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\ble_services\ble_bas\ble_bas.c">
+      <Filter>Source files\Device-specific files\BLE Battery Service</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\common\ble_advdata.c">
+      <Filter>Source files\Device-specific files\BLE Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\common\ble_conn_params.c">
+      <Filter>Source files\Device-specific files\BLE Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\common\ble_conn_state.c">
+      <Filter>Source files\Device-specific files\BLE Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\common\ble_srv_common.c">
+      <Filter>Source files\Device-specific files\BLE Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\ble_services\ble_dis\ble_dis.c">
+      <Filter>Source files\Device-specific files\BLE Device Information Service</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\ble_services\ble_hids\ble_hids.c">
+      <Filter>Source files\Device-specific files\BLE Human Interface Device Service</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\ble_link_ctx_manager\ble_link_ctx_manager.c">
+      <Filter>Source files\Device-specific files\BLE Link Context Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\nrf_ble_qwr\nrf_ble_qwr.c">
+      <Filter>Source files\Device-specific files\BLE Queued Writes module</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\nrf_ble_gatt\nrf_ble_gatt.c">
+      <Filter>Source files\Device-specific files\GATT</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_power.c">
+      <Filter>Source files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_rng.c">
+      <Filter>Source files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_uart.c">
+      <Filter>Source files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\util\app_error.c">
+      <Filter>Source files\Device-specific files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\util\app_error_handler_gcc.c">
+      <Filter>Source files\Device-specific files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\util\app_error_weak.c">
+      <Filter>Source files\Device-specific files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\util\app_util_platform.c">
+      <Filter>Source files\Device-specific files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\util\nrf_assert.c">
+      <Filter>Source files\Device-specific files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\util\sdk_mapped_flags.c">
+      <Filter>Source files\Device-specific files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\boards\boards.c">
+      <Filter>Source files\Device-specific files\Boards</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\atomic\nrf_atomic.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\atomic_fifo\nrf_atfifo.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\atomic_flags\nrf_atflags.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\balloc\nrf_balloc.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\bsp\bsp.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\bsp\bsp_btn_ant.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\bsp\bsp_btn_ble.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\bsp\bsp_cli.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\bsp\bsp_nfc.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\button\app_button.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\crc16\crc16.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\csense_drv\nrf_drv_csense.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\experimental_section_vars\nrf_section_iter.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\fds\fds.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\fifo\app_fifo.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\fstorage\nrf_fstorage.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\fstorage\nrf_fstorage_nvmc.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\fstorage\nrf_fstorage_sd.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\gfx\nrf_gfx.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\hardfault\hardfault_implementation.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\hci\hci_mem_pool.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\hci\hci_slip.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\hci\hci_transport.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\log\src\nrf_log_backend_flash.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\log\src\nrf_log_backend_rtt.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\log\src\nrf_log_backend_serial.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\log\src\nrf_log_backend_uart.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\log\src\nrf_log_default_backends.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\log\src\nrf_log_frontend.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\log\src\nrf_log_str_formatter.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\memobj\nrf_memobj.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\pwm\app_pwm.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\pwr_mgmt\nrf_pwr_mgmt.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\queue\nrf_queue.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\ringbuf\nrf_ringbuf.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\scheduler\app_scheduler.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\sensorsim\sensorsim.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\sortlist\nrf_sortlist.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\strerror\nrf_strerror.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\timer\app_timer2.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\timer\drv_rtc.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\uart\app_uart.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\libraries\uart\retarget.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\softdevice\common\nrf_sdh.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\softdevice\common\nrf_sdh_ant.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\softdevice\common\nrf_sdh_ble.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\softdevice\common\nrf_sdh_soc.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\external\fprintf\nrf_fprintf.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\external\fprintf\nrf_fprintf_format.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\auth_status_tracker.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\gatts_cache_manager.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\gatt_cache_manager.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\id_manager.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\nrf_ble_lesc.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\peer_database.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\peer_data_storage.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\peer_id.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\peer_manager.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\peer_manager_handler.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\pm_buffer.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\security_dispatcher.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\security_manager.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_adc.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_clock.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_comp.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_dppi.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_gpiote.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_i2s.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_lpcomp.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_nfct.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_nvmc.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_pdm.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_power.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_ppi.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_pwm.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_qdec.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_qspi.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_rng.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_rtc.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_saadc.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_spi.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_spim.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_spis.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_swi.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_systick.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_temp.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_timer.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_twi.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_twim.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_twis.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_twi_twim.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_uart.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_uarte.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_usbd.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_wdt.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\prs\nrfx_prs.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_ecb.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_nvmc.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_atomic.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClInclude Include="sdk_config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="nrf_peripherals.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\dsp\Include\arm_common_tables.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\dsp\Include\arm_const_structs.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\dsp\Include\arm_math.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\cmsis_armcc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\cmsis_armclang.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\cmsis_armclang_ltm.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\cmsis_compiler.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\cmsis_gcc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\cmsis_iccarm.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\cmsis_version.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_armv81mml.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_armv8mbl.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_armv8mml.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_cm0.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_cm0plus.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_cm1.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_cm23.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_cm3.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_cm33.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_cm35p.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_cm4.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_cm7.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_sc000.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\core_sc300.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\mpu_armv7.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\mpu_armv8.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\include\tz_context.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\system_nrf52840.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\ble_advertising\ble_advertising.h">
+      <Filter>Header files\Device-specific files\BLE Advertising Module</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\ble_services\ble_bas\ble_bas.h">
+      <Filter>Header files\Device-specific files\BLE Battery Service</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\common\ble_advdata.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\common\ble_conn_params.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\common\ble_conn_state.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\common\ble_date_time.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\common\ble_gatt_db.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\common\ble_sensor_location.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\common\ble_srv_common.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\ble_services\ble_dis\ble_dis.h">
+      <Filter>Header files\Device-specific files\BLE Device Information Service</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\ble_services\ble_hids\ble_hids.h">
+      <Filter>Header files\Device-specific files\BLE Human Interface Device Service</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\ble_link_ctx_manager\ble_link_ctx_manager.h">
+      <Filter>Header files\Device-specific files\BLE Link Context Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\nrf_ble_qwr\nrf_ble_qwr.h">
+      <Filter>Header files\Device-specific files\BLE Queued Writes module</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\nrf_ble_gatt\nrf_ble_gatt.h">
+      <Filter>Header files\Device-specific files\GATT</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\nrfx_config.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\nrfx_glue.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\nrfx_log.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\apply_old_config.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_common.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_comp.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_gpiote.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_i2s.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_lpcomp.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_pdm.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_power.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_ppi.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_pwm.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_qdec.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_qspi.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_rng.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_rtc.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_saadc.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_spi.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_spis.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_systick.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_timer.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_uart.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_usbd.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_usbd_errata.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_wdt.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\app_error.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\app_error_weak.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\app_util.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\app_util_bds.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\app_util_platform.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\nordic_common.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\nrf_assert.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\nrf_bitmask.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\sdk_alloca.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\sdk_common.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\sdk_errors.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\sdk_macros.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\sdk_mapped_flags.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\sdk_os.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\util\sdk_resources.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\arduino_joystick_shield_v1a.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\arduino_primo.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\boards.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\d52_starterkit.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\n5_starterkit.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\nrf6310.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca10000.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca10001.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca10003.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca10028.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca10031.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca10036.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca10040.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca10056.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca10059.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca10100.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca10112.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca20006.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\pca20020.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\boards\wt51822.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\atomic\nrf_atomic.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\atomic\nrf_atomic_internal.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\atomic\nrf_atomic_sanity_check.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\atomic_fifo\nrf_atfifo.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\atomic_fifo\nrf_atfifo_internal.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\atomic_flags\nrf_atflags.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\balloc\nrf_balloc.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\bsp\bsp.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\bsp\bsp_btn_ant.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\bsp\bsp_btn_ble.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\bsp\bsp_cli.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\bsp\bsp_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\bsp\bsp_nfc.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\button\app_button.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\crc16\crc16.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\csense_drv\nrf_drv_csense.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\experimental_section_vars\nrf_section.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\experimental_section_vars\nrf_section_iter.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\fds\fds.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\fds\fds_internal_defs.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\fifo\app_fifo.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\fstorage\nrf_fstorage.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\fstorage\nrf_fstorage_nvmc.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\fstorage\nrf_fstorage_sd.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\gfx\nrf_gfx.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\gfx\nrf_lcd.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\hardfault\hardfault.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\hardfault\hardfault_genhf.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\hci\hci_mem_pool.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\hci\hci_slip.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\hci\hci_transport.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\nrf_log.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\nrf_log_backend_flash.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\nrf_log_backend_interface.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\nrf_log_backend_rtt.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\nrf_log_backend_uart.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\nrf_log_ctrl.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\nrf_log_default_backends.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\nrf_log_instance.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\nrf_log_str_formatter.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\nrf_log_types.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\src\nrf_log_backend_serial.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\src\nrf_log_ctrl_internal.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\log\src\nrf_log_internal.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\memobj\nrf_memobj.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\pwm\app_pwm.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\pwr_mgmt\nrf_pwr_mgmt.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\queue\nrf_queue.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\ringbuf\nrf_ringbuf.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\scheduler\app_scheduler.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\sensorsim\sensorsim.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\sortlist\nrf_sortlist.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\strerror\nrf_strerror.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\timer\drv_rtc.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\libraries\uart\app_uart.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\softdevice\common\nrf_sdh.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\softdevice\common\nrf_sdh_ant.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\softdevice\common\nrf_sdh_ble.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\softdevice\common\nrf_sdh_soc.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\external\fprintf\nrf_fprintf.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\external\fprintf\nrf_fprintf_format.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\auth_status_tracker.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\gatts_cache_manager.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\gatt_cache_manager.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\id_manager.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\nrf_ble_lesc.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\peer_database.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\peer_data_storage.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\peer_id.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\peer_manager.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\peer_manager_handler.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\peer_manager_internal.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\peer_manager_types.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\pm_buffer.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\security_dispatcher.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\ble\peer_manager\security_manager.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\nrfx.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\nrfx_common.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\nrfx_errors.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_adc.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_clock.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_comp.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_dppi.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_gpiote.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_i2s.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_lpcomp.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_nfct.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_nvmc.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_pdm.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_power.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_power_clock.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_ppi.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_pwm.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_qdec.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_qspi.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_rng.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_rtc.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_saadc.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_saadc_v2.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_spi.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_spim.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_spis.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_swi.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_systick.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_temp.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_timer.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_twi.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_twim.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_twis.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_twi_twim.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_uart.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_uarte.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_usbd.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrfx_wdt.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\include\nrf_bitmask.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\nrfx_usbd_errata.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\drivers\src\prs\nrfx_prs.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_aar.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_acl.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_adc.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_bprot.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_ccm.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_clock.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_comp.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_dppi.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_ecb.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_egu.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_ficr.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_gpio.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_gpiote.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_i2s.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_kmu.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_lpcomp.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_mpu.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_mwu.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_nfct.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_nvmc.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_pdm.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_power.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_ppi.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_pwm.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_qdec.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_qspi.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_radio.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_regulators.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_rng.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_rtc.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_saadc.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_spi.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_spim.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_spis.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_spu.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_systick.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_temp.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_timer.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_twi.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_twim.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_twis.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_uart.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_uarte.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_usbd.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_vmc.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_wdt.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\compiler_abstraction.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51422_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51801_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51802_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51822_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51824_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51_bitfields.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51_deprecated.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51_erratas.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51_to_nrf52.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51_to_nrf52810.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf51_to_nrf52840.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52805.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52805_bitfields.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52805_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52810.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52810_bitfields.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52810_name_change.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52810_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52810_to_nrf52811.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52811.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52811_bitfields.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52811_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52820.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52820_bitfields.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52820_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52832_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52833.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52833_bitfields.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52833_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52833_to_nrf52820.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52840.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52840_bitfields.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52840_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52_bitfields.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52_erratas.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52_name_change.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52_to_nrf52810.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52_to_nrf52833.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf52_to_nrf52840.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf5340_application.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf5340_application_bitfields.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf5340_application_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf5340_network.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf5340_network_bitfields.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf5340_network_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf53_erratas.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf9160.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf9160_bitfields.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf9160_name_change.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf9160_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf91_erratas.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf_erratas.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\nrf_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\mdk\startup_config.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_atomic.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_atomic_internal.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_coredep.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_irqs.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_irqs_nrf51.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_irqs_nrf52810.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_irqs_nrf52811.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_irqs_nrf52820.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_irqs_nrf52832.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_irqs_nrf52833.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_irqs_nrf52840.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_irqs_nrf9160.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\components\drivers_nrf\twi_master\deprecated\twi_master.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers (Old)</Filter>
+    </ClInclude>
+    <None Include="nRF52Service_v2-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="nRF52Service_v2-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="nrf5x.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\nRF52Service_v2.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ble_cus.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\timer_lib.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ble_acel.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\ble_cus.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\nRF52Service_v2.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\common_var.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\timer_lib.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ble_acel.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
