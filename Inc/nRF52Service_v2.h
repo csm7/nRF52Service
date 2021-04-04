@@ -37,6 +37,9 @@
 #include "common_var.h"
 #include "timer_lib.h"
 
+#include "I2C.h"
+#include "BMA280.h"
+
 
 #define DEVICE_NAME                     "Mishka"                       /**< Name of device. Will be included in the advertising data. */
 #define MANUFACTURER_NAME               "Mishutka"                   /**< Manufacturer. Will be passed to Device Information Service. */
@@ -66,6 +69,7 @@
 
 #define DEAD_BEEF                       0xDEADBEEF                              /**< Value used as error code on stack dump, can be used to identify stack location on stack unwind. */
 
+static int16_t  resultBMA[4];
 
 /* YOUR_JOB: Declare all services structure your application is using
  *  BLE_XYZ_DEF(m_xyz);

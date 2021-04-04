@@ -79,6 +79,9 @@ static void acelerometr_level_meas_timeout_handler(void* p_context)
 	int8_t   temperature = 0;     // signed 8 bit
 
 	UNUSED_PARAMETER(p_context);
+
+	BMA280_Get_Data(resultBMA);
+
 	NRF_LOG_INFO("Battery Level timeout event");
 
 	sd_temp_get(&raw_temperature);
@@ -301,18 +304,18 @@ static void services_init(void)
 
 	cus_service_init();
 
-	ble_cus_init_t acelX_init;
-	ble_cus_init_t acelY_init;
-
-	memset(&acelX_init, 0, sizeof(acelX_init));
-
-	acelX_init.evt_handler = NULL;
-	
-	ble_advertising_init_t acelZ_init;
-
-	acelZ_init.evt_handler = NULL;
-
-	err_code = ble_advertising_init(&m_)
+//	ble_cus_init_t acelX_init;
+//	ble_cus_init_t acelY_init;
+//
+//	memset(&acelX_init, 0, sizeof(acelX_init));
+//
+//	acelX_init.evt_handler = NULL;
+//	
+//	ble_advertising_init_t acelZ_init;
+//
+//	acelZ_init.evt_handler = NULL;
+//
+//	err_code = ble_advertising_init(&m_)
 
 	/* YOUR_JOB: Add code to initialize the services used by the application.
 	   ble_xxs_init_t                     xxs_init;
@@ -989,6 +992,15 @@ int main(void)
 	advertising_init();
 	conn_params_init();
 	peer_manager_init();
+ 
+ // I2C Init
+ 	I2C_init();
+	nrf_delay_ms(500);
+	// BMA280 init
+	BMA280_Turn_On_Fast();
+		nrf_delay_ms(500);
+			BMA280_Calibrate();
+				nrf_delay_ms(500);
 
 	// Start execution.
 	NRF_LOG_INFO("Template example started.");

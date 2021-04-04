@@ -68,6 +68,7 @@
     <string>com.sysprogs.arm.nordic.nrfx.ble_bas</string>
     <string>com.sysprogs.arm.nordic.nrfx.ble_dis</string>
     <string>com.sysprogs.arm.nordic.nrfx.ble_hids</string>
+    <string>com.sysprogs.arm.nordic.nrf5x.libraries.external</string>
   </ReferencedFrameworks>
   <FrameworkProperties>
     <Entries>
@@ -315,6 +316,7 @@
       </KeyValue>
       <KeyValue>
         <Key>com.sysprogs.bspoptions.nrf5x.legacy_drivers.twi</Key>
+        <Value>yes</Value>
       </KeyValue>
       <KeyValue>
         <Key>com.sysprogs.bspoptions.nrf5x.legacy_drivers.uart</Key>
@@ -369,6 +371,66 @@
       </KeyValue>
       <KeyValue>
         <Key>com.sysprogs.bspoptions.nrf5x.libraries.twi</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.cifra_AES128-EAX</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.cJSON</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.fatfs</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.fnmatch</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.nano</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.nano-pb</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.nfc_adafruit_library</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.nrf_cc310_bl</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.nrf_cc310</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.nrf_oberon</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.protothreads</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.segger_rtt</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.thedotfactory_fonts</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.tile</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.nrf5x.libraries.external.utf_converter</Key>
         <Value />
       </KeyValue>
     </Entries>

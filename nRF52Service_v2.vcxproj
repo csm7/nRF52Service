@@ -43,14 +43,17 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
       <CLanguageStandard>GNU99</CLanguageStandard>
-      <AdditionalIncludeDirectories>Inc;Src;.;../nRF5_SDK_17.0.2_d674dde;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Inc;Src;.;../nRF5_SDK_17.0.2_d674dde;C:/Users/user/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/17.0;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CPPLanguageStandard />
     </ClCompile>
     <Link>
-      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
-      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
-      <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
       <LinkerScript />
+      <AdditionalOptions />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
@@ -66,6 +69,8 @@
   <ItemGroup>
     <ClCompile Include="Src\ble_acel.c" />
     <ClCompile Include="Src\ble_cus.c" />
+    <ClCompile Include="Src\BMA280.c" />
+    <ClCompile Include="Src\I2C.c" />
     <ClCompile Include="Src\nRF52Service_v2.c" />
     <ClCompile Include="Src\timer_lib.c" />
     <None Include="nrf5x.props" />
@@ -193,7 +198,9 @@
     <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_atomic.c" />
     <ClInclude Include="Inc\ble_acel.h" />
     <ClInclude Include="Inc\ble_cus.h" />
+    <ClInclude Include="Inc\BMA280.h" />
     <ClInclude Include="Inc\common_var.h" />
+    <ClInclude Include="Inc\I2C.h" />
     <ClInclude Include="Inc\nRF52Service_v2.h" />
     <ClInclude Include="Inc\timer_lib.h" />
     <ClInclude Include="sdk_config.h" />
@@ -539,5 +546,8 @@
     <None Include="nRF52Service_v2-Debug.vgdbsettings" />
     <None Include="nRF52Service_v2-Release.vgdbsettings" />
     <None Include="nrf5x.xml" />
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_twi.c" />
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_twi.h" />
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_twis.h" />
   </ItemGroup>
 </Project>

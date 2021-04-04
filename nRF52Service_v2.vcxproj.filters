@@ -112,6 +112,12 @@
     <Filter Include="VisualGDB settings">
       <UniqueIdentifier>{ae9c75f3-d315-429a-95af-3e386685bebb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source files\Device-specific files\ExternalLibraries">
+      <UniqueIdentifier>{88467357-bfc9-4af7-bbc9-827548e57732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\ExternalLibraries">
+      <UniqueIdentifier>{b5ea82a4-1cdd-4a90-aab0-3ab66c800e13}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="nrf5x.props">
@@ -1512,6 +1518,15 @@
     <None Include="nrf5x.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
+    <ClCompile Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_twi.c">
+      <Filter>Source files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_twi.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\nRF5x\integration\nrfx\legacy\nrf_drv_twis.h">
+      <Filter>Header files\Device-specific files\Legacy Peripheral Drivers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\nRF52Service_v2.c">
@@ -1524,6 +1539,12 @@
       <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="Src\ble_acel.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\I2C.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\BMA280.c">
       <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -1541,6 +1562,12 @@
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="Inc\ble_acel.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\I2C.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\BMA280.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

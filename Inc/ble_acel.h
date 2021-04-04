@@ -14,8 +14,8 @@
  #define BLE_ACEL_DEF(_name)          \
  static ble_acel_t _name;             \
  NRF_SDH_BLE_OBSERVER(_name ## _obs,  \
- BLE_CUS_BLE_OBSERVER_PRIO,           \
- ble_cus_on_ble_evt, &_name)
+ BLE_ACEL_BLE_OBSERVER_PRIO,           \
+ ble_acel_on_ble_evt, &_name)
 
 #define ACEL_SERVICE_UUID_BASE       { 0x23, 0xD1, 0x13, 0xEF, 0x5F, 0x78, 0x23, 0x15, \
                                        0xDE, 0xEF, 0x12, 0x12, 0x00, 0x00, 0x00, 0x00 }
@@ -98,7 +98,7 @@ struct ble_acel_s
  *
  * @param[in]   p_ble_evt   Event received from the BLE stack.
  */
-void ble_cus_on_ble_evt(ble_evt_t const * p_ble_evt, void * p_context);
+void ble_acel_on_ble_evt(ble_evt_t const * p_ble_evt, void * p_context);
 
 
 /**@brief Function for initializing the Acelerometr ble service.
@@ -109,7 +109,7 @@ void ble_cus_on_ble_evt(ble_evt_t const * p_ble_evt, void * p_context);
  * @return      NRF_SUCCESS on success, otherwise an error code.
  */
 
-uint32_t ble_cus_init(ble_acel_t * p_acel, const ble_acel_init_t * p_acel_init);
+uint32_t ble_acel_init(ble_acel_t * p_acel, const ble_acel_init_t * p_acel_init);
 
 
 /**@brief Function for updating the temperature data.
@@ -123,4 +123,4 @@ uint32_t ble_cus_init(ble_acel_t * p_acel, const ble_acel_init_t * p_acel_init);
  * @return      NRF_SUCCESS on success, otherwise an error code.
  */
 
-uint32_t temperature_value_update(ble_acel_t * p_cus, uint8_t  * p_data, uint16_t  p_length);
+uint32_t acelerometr_value_update(ble_acel_t * p_cus, uint8_t  * p_data, uint16_t  p_length);
