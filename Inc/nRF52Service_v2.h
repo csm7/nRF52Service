@@ -1,5 +1,11 @@
 #pragma once
-#pragma once
+/* See source 
+
+https://github.com/jliphard/wearable_nRF52_Firmware/blob/master/ble_ma.c 
+
+Коротко о nRF51822: Быстрый старт
+https://habr.com/ru/post/343166/
+*/
 
 #include <stdbool.h>
 #include <stdint.h>
