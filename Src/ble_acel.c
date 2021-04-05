@@ -145,7 +145,7 @@ static uint32_t acelerometr_char_add(ble_acel_t * p_cus, const ble_acel_init_t *
 	BLE_GAP_CONN_SEC_MODE_SET_OPEN(&cccd_md.write_perm);
 	BLE_GAP_CONN_SEC_MODE_SET_OPEN(&cccd_md.read_perm); 
     
-	cccd_md.write_perm = p_cus_init->ecelerometr_char_attr_md.cccd_write_perm;
+	cccd_md.write_perm = p_cus_init->acelerometr_char_attr_md.cccd_write_perm;
 	cccd_md.vloc       = BLE_GATTS_VLOC_STACK;
 
 	memset(&char_md, 0, sizeof(char_md));
@@ -164,8 +164,8 @@ static uint32_t acelerometr_char_add(ble_acel_t * p_cus, const ble_acel_init_t *
 
 	memset(&attr_md, 0, sizeof(attr_md));
 
-	attr_md.read_perm  = p_cus_init->temperature_char_attr_md.read_perm;
-	attr_md.write_perm = p_cus_init->temperature_char_attr_md.write_perm;
+	attr_md.read_perm  = p_cus_init->acelerometr_char_attr_md.read_perm;
+	attr_md.write_perm = p_cus_init->acelerometr_char_attr_md.write_perm;
 	attr_md.vloc       = BLE_GATTS_VLOC_STACK;
 	attr_md.rd_auth    = 0;
 	attr_md.wr_auth    = 0;
@@ -182,7 +182,7 @@ static uint32_t acelerometr_char_add(ble_acel_t * p_cus, const ble_acel_init_t *
 	err_code = sd_ble_gatts_characteristic_add(p_cus->service_handle, 
 		&char_md,
 		&attr_char_value,
-		&p_cus->temperature_value_handles);
+		&p_cus->acelerometr_value_handles);
 	if (err_code != NRF_SUCCESS)
 	{
 		return err_code;
@@ -198,7 +198,7 @@ static uint32_t acelerometr_char_add(ble_acel_t * p_cus, const ble_acel_init_t *
  *
  * @return      NRF_SUCCESS on success, otherwise an error code.
  */
-static uint32_t command_char_add(ble_cus_t * p_cus, const ble_cus_init_t * p_cus_init)
+static uint32_t command_char_add(ble_acel_t * p_cus, const ble_acel_init_t * p_cus_init)
 {
 
 	uint32_t            err_code;
@@ -221,7 +221,7 @@ static uint32_t command_char_add(ble_cus_t * p_cus, const ble_cus_init_t * p_cus
 	char_md.p_sccd_md         = NULL;
 
 	ble_uuid.type = p_cus->uuid_type;
-	ble_uuid.uuid = COMMAND_CHAR_UUID;
+	ble_uuid.uuid = ACELZ_CHAR_UUID;
 
 	memset(&attr_md, 0, sizeof(attr_md));
 
@@ -262,7 +262,7 @@ static uint32_t command_char_add(ble_cus_t * p_cus, const ble_cus_init_t * p_cus
  * @return      NRF_SUCCESS on success, otherwise an error code.
  */
 
-uint32_t ble_cus_init(ble_cus_t * p_cus, const ble_cus_init_t * p_cus_init)
+uint32_t ble_cus_init(ble_acel_t * p_cus, const ble_acel_init_t * p_cus_init)
 {
 
 	uint32_t   err_code;
@@ -273,12 +273,12 @@ uint32_t ble_cus_init(ble_cus_t * p_cus, const ble_cus_init_t * p_cus_init)
 	p_cus->conn_handle               = BLE_CONN_HANDLE_INVALID;
 
 	// Add the Custom bel Service UUID
-	ble_uuid128_t base_uuid = CUS_SERVICE_UUID_BASE;
+	ble_uuid128_t base_uuid = ACEL_SERVICE_UUID_BASE;
 	err_code =  sd_ble_uuid_vs_add(&base_uuid, &p_cus->uuid_type);
 	VERIFY_SUCCESS(err_code);
     
 	ble_uuid.type = p_cus->uuid_type;
-	ble_uuid.uuid = CUS_SERVICE_UUID;
+	ble_uuid.uuid = ACEL_SERVICE_UUID;
 
 	// Add the Service to the database
 	err_code = sd_ble_gatts_service_add(BLE_GATTS_SRVC_TYPE_PRIMARY, &ble_uuid, &p_cus->service_handle);
@@ -311,7 +311,7 @@ uint32_t ble_cus_init(ble_cus_t * p_cus, const ble_cus_init_t * p_cus_init)
  * @return      NRF_SUCCESS on success, otherwise an error code.
  */
 
-uint32_t temperature_value_update(ble_cus_t * p_cus, uint8_t  * p_data, uint16_t  p_length)
+uint32_t temperature_value_update(ble_acel_t * p_cus, uint8_t  * p_data, uint16_t  p_length)
 {
 	uint32_t   err_code;
 
@@ -321,7 +321,7 @@ uint32_t temperature_value_update(ble_cus_t * p_cus, uint8_t  * p_data, uint16_t
 	}
 
 	ble_gatts_value_t   gatts_value;
-	ble_cus_evt_t               evt;
+	ble_acel_evt_t               evt;
 
 	// Initialize value struct.
 	memset(&gatts_value, 0, sizeof(gatts_value));
@@ -332,7 +332,7 @@ uint32_t temperature_value_update(ble_cus_t * p_cus, uint8_t  * p_data, uint16_t
 
 	// Update database.
 	err_code = sd_ble_gatts_value_set(p_cus->conn_handle,
-		p_cus->temperature_value_handles.value_handle,
+		p_cus->acelerometr_value_handles.value_handle,
 		&gatts_value);
 	if (err_code != NRF_SUCCESS)
 	{
@@ -341,13 +341,13 @@ uint32_t temperature_value_update(ble_cus_t * p_cus, uint8_t  * p_data, uint16_t
 
 	// Notify the host, if connected and notifications are enabled.
 	if((p_cus->conn_handle != BLE_CONN_HANDLE_INVALID) 
-	     && (evt.evt_type = BLE_TEMP_NOTIFICATION_ENABLED)) 
+	     && (evt.evt_type = BLE_ACEL_NOTIFICATION_ENABLED)) 
 	{
 		ble_gatts_hvx_params_t hvx_params;
 
 		//memset(&hvx_params, 0, sizeof(hvx_params));
 
-		hvx_params.handle = p_cus->temperature_value_handles.value_handle;
+		hvx_params.handle = p_cus->acelerometr_value_handles.value_handle;
 		hvx_params.type   = BLE_GATT_HVX_NOTIFICATION;
 		hvx_params.offset = gatts_value.offset;
 		hvx_params.p_len  = &gatts_value.len;
