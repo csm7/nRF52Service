@@ -30,7 +30,14 @@ NRF_SDH_BLE_OBSERVER(_name ## _obs,                                             
 #define CUS_SERVICE_UUID              0x1200
 #define TEMPERATURE_CHAR_UUID         0x1201 
 #define COMMAND_CHAR_UUID             0x1202	
-																		
+
+/* */
+#define ACEL_SERVICE_UUID_BASE         {0xBC, 0x8A, 0xBF, 0x45, 0xCA, 0x05, 0x50, 0xBA, \
+                                          0x40, 0x42, 0xB0, 0x00, 0xC9, 0xAD, 0x64, 0xF3}
+                                          
+/* */
+#define ACEL_SERVICE_UUID               0x1400
+#define ACEL_VALUE_CHAR_UUID            0x1401
 /**@brief Custom service event types.
 *
 */

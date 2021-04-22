@@ -84,8 +84,9 @@ static int16_t  resultBMA[4];
 // YOUR_JOB: Use UUIDs for service(s) used in your application.
 static ble_uuid_t m_adv_uuids[] =                                               /**< Universally unique service identifiers. */
 {
-	//    {BLE_UUID_DEVICE_INFORMATION_SERVICE, BLE_UUID_TYPE_BLE}
-	{ CUS_SERVICE_UUID, BLE_UUID_TYPE_VENDOR_BEGIN }
+	{BLE_UUID_DEVICE_INFORMATION_SERVICE, BLE_UUID_TYPE_BLE},
+	{ CUS_SERVICE_UUID, BLE_UUID_TYPE_BLE }
+	,{ACEL_SERVICE_UUID, BLE_UUID_TYPE_BLE} //	BLE_UUID_TYPE_VENDOR_BEGIN
 };
 
 
