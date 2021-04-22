@@ -1538,9 +1538,6 @@
     <ClCompile Include="Src\timer_lib.c">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\ble_acel.c">
-      <Filter>Source files</Filter>
-    </ClCompile>
     <ClCompile Include="Src\I2C.c">
       <Filter>Source files</Filter>
     </ClCompile>
@@ -1559,9 +1556,6 @@
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="Inc\timer_lib.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="Inc\ble_acel.h">
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="Inc\I2C.h">

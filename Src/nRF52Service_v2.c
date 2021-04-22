@@ -994,17 +994,17 @@ int main(void)
 	peer_manager_init();
  
  // I2C Init
- 	I2C_init();
+// 	I2C_init();
 	nrf_delay_ms(500);
 	// BMA280 init
-	BMA280_Turn_On_Fast();
+//	BMA280_Turn_On_Fast();
 		nrf_delay_ms(500);
-			BMA280_Calibrate();
+//			BMA280_Calibrate();
 				nrf_delay_ms(500);
 
 	// Start execution.
 	NRF_LOG_INFO("Template example started.");
-	application_timers_start();
+//	application_timers_start();
 
 	advertising_start(erase_bonds);
 

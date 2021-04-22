@@ -67,7 +67,6 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup>
-    <ClCompile Include="Src\ble_acel.c" />
     <ClCompile Include="Src\ble_cus.c" />
     <ClCompile Include="Src\BMA280.c" />
     <ClCompile Include="Src\I2C.c" />
@@ -196,7 +195,6 @@
     <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_ecb.c" />
     <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\hal\nrf_nvmc.c" />
     <ClCompile Include="$(BSP_ROOT)\nRF5x\modules\nrfx\soc\nrfx_atomic.c" />
-    <ClInclude Include="Inc\ble_acel.h" />
     <ClInclude Include="Inc\ble_cus.h" />
     <ClInclude Include="Inc\BMA280.h" />
     <ClInclude Include="Inc\common_var.h" />
