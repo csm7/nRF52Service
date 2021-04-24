@@ -123,7 +123,7 @@ void ble_cus_on_ble_evt( ble_evt_t const * p_ble_evt, void * p_context);
  * @return      NRF_SUCCESS on success, otherwise an error code.
  */
 
-uint32_t ble_cus_init(ble_cus_t * p_cus, const ble_cus_init_t * p_cus_init);
+uint32_t ble_cus_init(ble_cus_t * p_cus, ble_cus_t *p_cus_acel, const ble_cus_init_t * p_cus_init, const ble_cus_init_t *p_acel_init);
 
 
 /**@brief Function for updating the temperature data.

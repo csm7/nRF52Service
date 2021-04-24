@@ -264,18 +264,19 @@ static uint32_t command_char_add(ble_cus_t * p_cus, const ble_cus_init_t * p_cus
  * @return      NRF_SUCCESS on success, otherwise an error code.
  */
 
-uint32_t ble_cus_init(ble_cus_t * p_cus, const ble_cus_init_t * p_cus_init)
+uint32_t ble_cus_init(ble_cus_t * p_cus, ble_cus_t *p_acel, const ble_cus_init_t * p_cus_init, const ble_cus_init_t *p_acel_init)
 {
-
     uint32_t   err_code;
     ble_uuid_t ble_uuid;
+	  ble_uuid_t acel_ble_uuid;
 
+#pragma region CUS_SERVICE_UUID_BASE
     // Initializing the  service structure
     p_cus->evt_handler               = p_cus_init->evt_handler;
     p_cus->conn_handle               = BLE_CONN_HANDLE_INVALID;
 
-    // Add the Custom bel Service UUID
-    ble_uuid128_t base_uuid = CUS_SERVICE_UUID_BASE;
+	// Add the Custom bel Service UUID
+	ble_uuid128_t base_uuid = CUS_SERVICE_UUID_BASE;
     err_code =  sd_ble_uuid_vs_add(&base_uuid, &p_cus->uuid_type);
     VERIFY_SUCCESS(err_code);
     
@@ -295,26 +296,39 @@ uint32_t ble_cus_init(ble_cus_t * p_cus, const ble_cus_init_t * p_cus_init)
 
     // Add the command characteristic
    err_code =  command_char_add(p_cus, p_cus_init);
-   APP_ERROR_CHECK(err_code);
+   APP_ERROR_CHECK(err_code);				  
+#pragma endregion //CUS_SERVICE_UUID_BASE
 
-//	// Add the Custom bel Service UUID
-//	ble_uuid128_t acel_base_uuid = ACEL_SERVICE_UUID_BASE;
-//	err_code =  sd_ble_uuid_vs_add(&acel_base_uuid, &p_cus->uuid_type);
-//	VERIFY_SUCCESS(err_code);
-//
-//	ble_uuid.type = p_cus->uuid_type;
-//	ble_uuid.uuid = ACEL_SERVICE_UUID;
-//
-//	// Add the Service to the database
-//	err_code = sd_ble_gatts_service_add(BLE_GATTS_SRVC_TYPE_PRIMARY, &ble_uuid, &p_cus->service_handle);
-//	if (err_code != NRF_SUCCESS)
-//	{
-//		return err_code;
-//	}
+//--------------------------------------------------------------------------
+    // Initializing the  service structure
+    p_acel->evt_handler        = p_acel_init->evt_handler;
+	  p_acel->conn_handle        = BLE_CONN_HANDLE_INVALID;
 
+	// Add the Custom bel Service UUID
+	ble_uuid128_t acel_base_uuid = ACEL_SERVICE_UUID_BASE;
+	err_code =  sd_ble_uuid_vs_add(&acel_base_uuid, &p_acel->uuid_type);
+	VERIFY_SUCCESS(err_code);
+    
+	acel_ble_uuid.type = p_acel->uuid_type;
+	acel_ble_uuid.uuid = ACEL_SERVICE_UUID;
+
+	// Add the Service to the database
+	err_code = sd_ble_gatts_service_add(BLE_GATTS_SRVC_TYPE_PRIMARY, &acel_ble_uuid, &p_acel->service_handle);
+	if (err_code != NRF_SUCCESS)
+	{
+		return err_code;
+	}
+
+
+	// Add the temperature characteristic
+ err_code =  temperature_char_add(p_acel, p_acel_init);
+	APP_ERROR_CHECK(err_code);
+
+	// Add the command characteristic
+ err_code =  command_char_add(p_acel, p_acel_init);
+	APP_ERROR_CHECK(err_code);				  
 
    return NRF_SUCCESS;
-
 
 }
 

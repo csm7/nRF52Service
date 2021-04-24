@@ -22,6 +22,7 @@ NRF_BLE_QWR_DEF(m_qwr);                                                         
 
  /**< Context for the Queued Write module.*/
 BLE_CUS_DEF(m_cus);
+BLE_CUS_DEF(m_acel_cus);
 BLE_ADVERTISING_DEF(m_advertising);                                             /**< Advertising module instance. */
 
 /*Temperature timer*/
@@ -269,6 +270,7 @@ static void cus_service_init(void) {
 	ret_code_t          err_code;
 	ble_cus_init_t      cus_init = { 0 };
 
+
 	// temperature notification cccd write permission
 	BLE_GAP_CONN_SEC_MODE_SET_OPEN(&cus_init.temperature_char_attr_md.cccd_write_perm);
  
@@ -283,9 +285,28 @@ static void cus_service_init(void) {
 	// service event handler
 	cus_init.evt_handler        = on_cus_evt; 
 	// service init
-	err_code = ble_cus_init(&m_cus, &cus_init);
-	APP_ERROR_CHECK(err_code);
+//	err_code = ble_cus_init(&m_cus, &cus_init);
+//	APP_ERROR_CHECK(err_code);
 
+	ble_cus_init_t			acel_init = { 0 };
+
+	// temperature notification cccd write permission
+	BLE_GAP_CONN_SEC_MODE_SET_OPEN(&acel_init.temperature_char_attr_md.cccd_write_perm);
+ 
+	// temperature char write&read opeartion permetted
+	BLE_GAP_CONN_SEC_MODE_SET_OPEN(&acel_init.temperature_char_attr_md.read_perm);
+	BLE_GAP_CONN_SEC_MODE_SET_NO_ACCESS(&acel_init.temperature_char_attr_md.write_perm);
+
+	// command characteristic write and read opeartions permissions
+	BLE_GAP_CONN_SEC_MODE_SET_NO_ACCESS(&acel_init.command_char_attr_md.read_perm);
+	BLE_GAP_CONN_SEC_MODE_SET_OPEN(&acel_init.command_char_attr_md.write_perm);
+
+	// service event handler
+	acel_init.evt_handler        = on_cus_evt; 
+	// service init
+	err_code = ble_cus_init(&m_cus, &m_acel_cus, &acel_init, &acel_init);
+	APP_ERROR_CHECK(err_code);
+	
 } 
 
 
