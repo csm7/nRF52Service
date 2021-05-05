@@ -77,6 +77,8 @@ https://habr.com/ru/post/343166/
 
 static int16_t  resultBMA[4];
 
+//static uint8_t enableNotificationAcel = 0;
+
 /* YOUR_JOB: Declare all services structure your application is using
  *  BLE_XYZ_DEF(m_xyz);
  */

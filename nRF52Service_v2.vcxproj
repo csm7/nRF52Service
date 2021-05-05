@@ -201,6 +201,7 @@
     <ClInclude Include="Inc\I2C.h" />
     <ClInclude Include="Inc\nRF52Service_v2.h" />
     <ClInclude Include="Inc\timer_lib.h" />
+    <ClInclude Include="Inc\variable.h" />
     <ClInclude Include="sdk_config.h" />
     <ClInclude Include="nrf_peripherals.h" />
     <ClInclude Include="$(BSP_ROOT)\nRF5x\components\toolchain\cmsis\dsp\Include\arm_common_tables.h" />

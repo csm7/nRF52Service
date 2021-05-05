@@ -28,6 +28,7 @@ BLE_ADVERTISING_DEF(m_advertising);                                             
 /*Temperature timer*/
 APP_TIMER_DEF(m_ecelerometr_timer_id);
 
+
 /**@brief Callback function for asserts in the SoftDevice.
  *
  * @details This function will be called in case of an assert in the SoftDevice.
@@ -81,7 +82,7 @@ static void acelerometr_level_meas_timeout_handler(void* p_context)
 
 	UNUSED_PARAMETER(p_context);
 
-	BMA280_Get_Data(resultBMA);
+//	BMA280_Get_Data(resultBMA);
 
 	NRF_LOG_INFO("Battery Level timeout event");
 
@@ -90,13 +91,16 @@ static void acelerometr_level_meas_timeout_handler(void* p_context)
 	temperature = raw_temperature / 4;
 	uint32_encode(raw_temperature, encoded_temperature);
 
+	
 	// Only send the battery level update if we are connected
 	if(m_conn_handle != BLE_CONN_HANDLE_INVALID)
 	{
-		bsp_board_led_invert(BSP_LED_INDICATE_USER_LED2);
+		uint32_encode(rand(), encoded_temperature);
 
-		err_code = temperature_value_update(&m_cus, encoded_temperature, sizeof(encoded_temperature));
-		APP_ERROR_CHECK(err_code);
+			bsp_board_led_invert(BSP_LED_INDICATE_USER_LED2);	
+//				err_code = temperature_value_update(&m_cus, encoded_temperature, sizeof(encoded_temperature));
+				err_code = temperature_value_update(&m_acel_cus, encoded_temperature, sizeof(encoded_temperature));
+			APP_ERROR_CHECK(err_code);
 	}
 }
 
@@ -763,6 +767,8 @@ static void button_event_handler(uint8_t pin_no, uint8_t button_action)
 				NRF_LOG_INFO("encoded_temperature[%d] = %d.", i, encoded_temperature[i]);
 			}
 #endif
+			//			err_code = sd_ble_gatts_hvx();
+
 			if (m_conn_handle != BLE_CONN_HANDLE_INVALID)
 			{
 				err_code = temperature_value_update(&m_cus, encoded_temperature, sizeof(encoded_temperature));
@@ -1025,7 +1031,7 @@ int main(void)
 
 	// Start execution.
 	NRF_LOG_INFO("Template example started.");
-//	application_timers_start();
+	application_timers_start();
 
 	advertising_start(erase_bonds);
 

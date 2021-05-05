@@ -1564,5 +1564,8 @@
     <ClInclude Include="Inc\BMA280.h">
       <Filter>Header files</Filter>
     </ClInclude>
+    <ClInclude Include="Inc\variable.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

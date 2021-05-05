@@ -8,7 +8,7 @@
 
 #include "common_var.h"
 
-#define ACELEROMETR_MEAS_INTERVAL APP_TIMER_TICKS(400) /**< Acelerometr level measurement interval (ticks). */
+#define ACELEROMETR_MEAS_INTERVAL APP_TIMER_TICKS(1000) /**< Acelerometr level measurement interval (ticks). */
 
 static void acelerometr_level_meas_timeout_handler(void* p_context);
 

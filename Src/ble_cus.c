@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /* 
  * ble_cus.c : file for the Custom ble service.
  * Author : Abdelali Boussetta  @rmptxf
@@ -81,10 +82,12 @@ static void on_write(ble_cus_t * p_cus, ble_evt_t const * p_ble_evt)
 
             if (ble_srv_is_notification_enabled(p_evt_write->data))
             {
+	            enableNotificationAcel = 1;
                 evt.evt_type = BLE_TEMP_NOTIFICATION_ENABLED;
             }
             else
             {
+//	            enableNotificationAcel = 0;
                 evt.evt_type = BLE_TEMP_NOTIFICATION_DISABLED;
             }
             // Call the application event handler.
@@ -371,27 +374,31 @@ uint32_t temperature_value_update(ble_cus_t * p_cus, uint8_t  * p_data, uint16_t
         return err_code;
     }
 
-    // Notify the host, if connected and notifications are enabled.
-    if ((p_cus->conn_handle != BLE_CONN_HANDLE_INVALID) 
-         && (evt.evt_type = BLE_TEMP_NOTIFICATION_ENABLED)) 
-    {
-        ble_gatts_hvx_params_t hvx_params;
+	// Notify the host, if connected and notifications are enabled.
+	//    if ((p_cus->conn_handle != BLE_CONN_HANDLE_INVALID) 
+	//         && (evt.evt_type == BLE_TEMP_NOTIFICATION_ENABLED))
+	  if(evt.evt_type == BLE_TEMP_NOTIFICATION_ENABLED)
+	  {
+		  if ((p_cus->conn_handle != BLE_CONN_HANDLE_INVALID)) 
+		  {
+			  ble_gatts_hvx_params_t hvx_params;
 
-        //memset(&hvx_params, 0, sizeof(hvx_params));
+			  memset(&hvx_params, 0, sizeof(hvx_params));
+			  //	    rand();
+			  hvx_params.handle = p_cus->temperature_value_handles.value_handle;
+			  hvx_params.type   = BLE_GATT_HVX_NOTIFICATION;
+			  hvx_params.offset = gatts_value.offset;
+			  hvx_params.p_len  = &gatts_value.len;
+			  hvx_params.p_data = gatts_value.p_value;
 
-        hvx_params.handle = p_cus->temperature_value_handles.value_handle;
-        hvx_params.type   = BLE_GATT_HVX_NOTIFICATION;
-        hvx_params.offset = gatts_value.offset;
-        hvx_params.p_len  = &gatts_value.len;
-        hvx_params.p_data = gatts_value.p_value;
-
-        err_code = sd_ble_gatts_hvx(p_cus->conn_handle, &hvx_params);
-        // Make sure the above function reports a BLE_GATTS_EVT_HVN_TX_COMPLETE
-    }
-    else
-    {
-        err_code = NRF_ERROR_INVALID_STATE;
-    }
+			  err_code = sd_ble_gatts_hvx(p_cus->conn_handle, &hvx_params);
+			  // Make sure the above function reports a BLE_GATTS_EVT_HVN_TX_COMPLETE
+		  }
+		  else
+		  {
+			  err_code = NRF_ERROR_INVALID_STATE;
+		  }
+		}
 
     return err_code;
 

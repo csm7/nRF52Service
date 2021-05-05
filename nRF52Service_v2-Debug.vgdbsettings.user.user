@@ -22,7 +22,7 @@
           <ComparisonMode>Equals</ComparisonMode>
           <Enabled>false</Enabled>
         </Breakpoint>
-        <Plot>true</Plot>
+        <Plot>false</Plot>
         <IsCollapsed>false</IsCollapsed>
       </LiveVariable>
       <LiveVariable>
@@ -33,7 +33,7 @@
           <ComparisonMode>Equals</ComparisonMode>
           <Enabled>false</Enabled>
         </Breakpoint>
-        <Plot>true</Plot>
+        <Plot>false</Plot>
         <IsCollapsed>false</IsCollapsed>
       </LiveVariable>
       <LiveVariable>
@@ -44,7 +44,7 @@
           <ComparisonMode>Equals</ComparisonMode>
           <Enabled>false</Enabled>
         </Breakpoint>
-        <Plot>true</Plot>
+        <Plot>false</Plot>
         <IsCollapsed>false</IsCollapsed>
       </LiveVariable>
       <LiveVariable>
@@ -57,6 +57,28 @@
         </Breakpoint>
         <Plot>false</Plot>
         <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>enableNotificationAcel</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>encoded_temperature</Expression>
+        <Type>Invalid</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>true</IsCollapsed>
       </LiveVariable>
     </LiveVariables>
     <NestedLiveVariableSettings>
@@ -129,6 +151,182 @@
       <LiveVariable>
         <Expression>*(dest)</Expression>
         <Type>SInt16</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[0]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>true</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[1]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>true</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[2]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>true</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[3]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>true</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[0]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[1]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[2]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[3]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[0]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[1]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[2]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[3]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[0]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[1]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[2]</Expression>
+        <Type>UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>(encoded_temperature)[3]</Expression>
+        <Type>UInt8</Type>
         <Enabled>true</Enabled>
         <Breakpoint>
           <ComparisonMode>Equals</ComparisonMode>

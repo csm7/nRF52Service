@@ -3,12 +3,14 @@
  * Author : Abdelali Boussetta  @rmptxf
  * For @Paarth
  */
+#pragma once
 
 #include <stdint.h>
 #include <stdbool.h>
 #include "ble.h"
 #include "ble_srv_common.h"
 
+//#include "timer_lib.h"
 
 #define BLE_CUS_BLE_OBSERVER_PRIO  2
 
@@ -138,3 +140,5 @@ uint32_t ble_cus_init(ble_cus_t * p_cus, ble_cus_t *p_cus_acel, const ble_cus_in
  */
 
 uint32_t temperature_value_update(ble_cus_t * p_cus, uint8_t  * p_data, uint16_t  p_length);
+
+static uint8_t enableNotificationAcel;
