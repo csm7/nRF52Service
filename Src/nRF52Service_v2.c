@@ -752,6 +752,12 @@ static void button_event_handler(uint8_t pin_no, uint8_t button_action)
 	case BUTTON_1:
 		if (button_action == APP_BUTTON_PUSH) 
 		{           
+			if (bsp_board_led_state_get(BSP_BOARD_LED_0))
+			{
+				bsp_board_led_off(BSP_BOARD_LED_0);
+			}
+			else 
+				bsp_board_led_on(BSP_BOARD_LED_0);
 #ifdef UART_PRINTING_ENABLED
 			NRF_LOG_INFO("button1 pressed.");
 #endif
@@ -793,6 +799,12 @@ static void button_event_handler(uint8_t pin_no, uint8_t button_action)
 	case BUTTON_2:
 		if (button_action == APP_BUTTON_PUSH) 
 		{
+			if (bsp_board_led_state_get(BSP_BOARD_LED_1))
+			{
+				bsp_board_led_off(BSP_BOARD_LED_1);
+			}
+			else 
+				bsp_board_led_on(BSP_BOARD_LED_1);
 #ifdef UART_PRINTING_ENABLED
 			NRF_LOG_INFO("button2 pressed.");
 #endif
@@ -808,6 +820,12 @@ static void button_event_handler(uint8_t pin_no, uint8_t button_action)
 	case BUTTON_3:
 		if (button_action == APP_BUTTON_PUSH) 
 		{
+			if (bsp_board_led_state_get(BSP_BOARD_LED_2))
+			{
+				bsp_board_led_off(BSP_BOARD_LED_2);
+			}
+			else 
+				bsp_board_led_on(BSP_BOARD_LED_2);
 #ifdef UART_PRINTING_ENABLED
 			NRF_LOG_INFO("button3 pressed.");
 #endif
@@ -823,6 +841,12 @@ static void button_event_handler(uint8_t pin_no, uint8_t button_action)
 	case BUTTON_4:
 		if (button_action == APP_BUTTON_PUSH) 
 		{
+			if (bsp_board_led_state_get(BSP_BOARD_LED_3))
+			{
+				bsp_board_led_off(BSP_BOARD_LED_3);
+			}
+			else 
+				bsp_board_led_on(BSP_BOARD_LED_3);
 #ifdef UART_PRINTING_ENABLED
 			NRF_LOG_INFO("button4 pressed.");
 #endif
@@ -1033,7 +1057,7 @@ int main(void)
 	NRF_LOG_INFO("Template example started.");
 	application_timers_start();
 
-//	advertising_start(erase_bonds);
+	advertising_start(erase_bonds);
 
 	// Enter main loop.
 	for(;  ;)
