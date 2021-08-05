@@ -17,6 +17,7 @@
 
 #include "nRF52Service_v2.h"
 
+
 NRF_BLE_GATT_DEF(m_gatt);                                                       /**< GATT module instance. */
 NRF_BLE_QWR_DEF(m_qwr);                                                         /**< Context for the Queued Write module.*/
 
@@ -82,7 +83,7 @@ static void acelerometr_level_meas_timeout_handler(void* p_context)
 
 	UNUSED_PARAMETER(p_context);
 
-//	BMA280_Get_Data(resultBMA);
+	BMA280_Get_Data(resultBMA);
 
 	NRF_LOG_INFO("Battery Level timeout event");
 
@@ -97,7 +98,7 @@ static void acelerometr_level_meas_timeout_handler(void* p_context)
 	{
 		uint32_encode(rand(), encoded_temperature);
 
-			bsp_board_led_invert(BSP_LED_INDICATE_USER_LED2);	
+//			bsp_board_led_invert(BSP_LED_INDICATE_USER_LED2);	
 //				err_code = temperature_value_update(&m_cus, encoded_temperature, sizeof(encoded_temperature));
 				err_code = temperature_value_update(&m_acel_cus, encoded_temperature, sizeof(encoded_temperature));
 			APP_ERROR_CHECK(err_code);
@@ -823,12 +824,14 @@ static void button_event_handler(uint8_t pin_no, uint8_t button_action)
 			if (bsp_board_led_state_get(BSP_BOARD_LED_2))
 			{
 				bsp_board_led_off(BSP_BOARD_LED_2);
+				NRF_I2S->TASKS_STOP = 1;
 			}
-			else 
-				bsp_board_led_on(BSP_BOARD_LED_2);
-#ifdef UART_PRINTING_ENABLED
-			NRF_LOG_INFO("button3 pressed.");
-#endif
+			else
+			{
+				NRF_I2S->TASKS_STOP = 1;
+				bsp_board_led_on(BSP_BOARD_LED_2);	
+				sound_cuica_start();						
+			} 
 		}
 		else if (button_action == APP_BUTTON_RELEASE) 
 		{
@@ -844,9 +847,14 @@ static void button_event_handler(uint8_t pin_no, uint8_t button_action)
 			if (bsp_board_led_state_get(BSP_BOARD_LED_3))
 			{
 				bsp_board_led_off(BSP_BOARD_LED_3);
+				NRF_I2S->TASKS_STOP = 1;
 			}
-			else 
+			else
+			{
+				NRF_I2S->TASKS_STOP = 1;
 				bsp_board_led_on(BSP_BOARD_LED_3);
+					sound_claves_start();		
+			} 
 #ifdef UART_PRINTING_ENABLED
 			NRF_LOG_INFO("button4 pressed.");
 #endif
@@ -1045,13 +1053,14 @@ int main(void)
 	peer_manager_init();
  
  // I2C Init
-// 	I2C_init();
+ 	I2C_init();
 	nrf_delay_ms(500);
-	// BMA280 init
-//	BMA280_Turn_On_Fast();
+//	 BMA280 init
+	BMA280_Turn_On_Fast();
 		nrf_delay_ms(500);
-//			BMA280_Calibrate();
+			BMA280_Calibrate();
 				nrf_delay_ms(500);
+	I2S_init();
 
 	// Start execution.
 	NRF_LOG_INFO("Template example started.");

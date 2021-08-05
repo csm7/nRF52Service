@@ -1544,6 +1544,9 @@
     <ClCompile Include="Src\BMA280.c">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="Src\I2S.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\ble_cus.h">
@@ -1565,6 +1568,12 @@
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="Inc\variable.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\sounds.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\I2S.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

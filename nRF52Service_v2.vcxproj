@@ -70,6 +70,7 @@
     <ClCompile Include="Src\ble_cus.c" />
     <ClCompile Include="Src\BMA280.c" />
     <ClCompile Include="Src\I2C.c" />
+    <ClCompile Include="Src\I2S.c" />
     <ClCompile Include="Src\nRF52Service_v2.c" />
     <ClCompile Include="Src\timer_lib.c" />
     <None Include="nrf5x.props" />
@@ -199,7 +200,9 @@
     <ClInclude Include="Inc\BMA280.h" />
     <ClInclude Include="Inc\common_var.h" />
     <ClInclude Include="Inc\I2C.h" />
+    <ClInclude Include="Inc\I2S.h" />
     <ClInclude Include="Inc\nRF52Service_v2.h" />
+    <ClInclude Include="Inc\sounds.h" />
     <ClInclude Include="Inc\timer_lib.h" />
     <ClInclude Include="Inc\variable.h" />
     <ClInclude Include="sdk_config.h" />

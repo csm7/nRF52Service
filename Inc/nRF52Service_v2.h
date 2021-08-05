@@ -46,6 +46,8 @@ https://habr.com/ru/post/343166/
 #include "I2C.h"
 #include "BMA280.h"
 
+#include "I2S.h"
+
 
 #define DEVICE_NAME                     "Mishka"                       /**< Name of device. Will be included in the advertising data. */
 #define MANUFACTURER_NAME               "Mishutka"                   /**< Manufacturer. Will be passed to Device Information Service. */
@@ -74,6 +76,14 @@ https://habr.com/ru/post/343166/
 #define SEC_PARAM_MAX_KEY_SIZE          16                                      /**< Maximum encryption key size. */
 
 #define DEAD_BEEF                       0xDEADBEEF                              /**< Value used as error code on stack dump, can be used to identify stack location on stack unwind. */
+
+// I2S configuration
+#define PIN_MCK    (13) // no wire
+#define PIN_SCK    (14) // p0.14 bordovii
+#define PIN_LRCK   (15) // p0.15 wire blue
+#define PIN_SDOUT  (16) // p0.16 wire red
+#define PAUSE_TIME          3000
+
 
 static int16_t  resultBMA[4];
 
