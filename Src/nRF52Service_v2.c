@@ -543,6 +543,8 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
 		APP_ERROR_CHECK(err_code);
 		break;
 
+//	case BLE_GATTS_EVT_WRITE:
+//		break;
 	default:
 		// No implementation needed.
 		break;

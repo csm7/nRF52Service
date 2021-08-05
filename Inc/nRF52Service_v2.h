@@ -5,6 +5,9 @@ https://github.com/jliphard/wearable_nRF52_Firmware/blob/master/ble_ma.c
 
 Коротко о nRF51822: Быстрый старт
 https://habr.com/ru/post/343166/
+
+create characteristic and cofigure one
+https://devzone.nordicsemi.com/nordic/short-range-guides/b/bluetooth-low-energy/posts/ble-characteristics-a-beginners-tutorial
 */
 
 #include <stdbool.h>
@@ -77,12 +80,6 @@ https://habr.com/ru/post/343166/
 
 #define DEAD_BEEF                       0xDEADBEEF                              /**< Value used as error code on stack dump, can be used to identify stack location on stack unwind. */
 
-// I2S configuration
-#define PIN_MCK    (13) // no wire
-#define PIN_SCK    (14) // p0.14 bordovii
-#define PIN_LRCK   (15) // p0.15 wire blue
-#define PIN_SDOUT  (16) // p0.16 wire red
-#define PAUSE_TIME          3000
 
 
 static int16_t  resultBMA[4];

@@ -17,11 +17,11 @@ extern "C" {
 #include "sounds.h"
 
 	// I2S configuration
-#define PIN_MCK    (13) // no wire
-#define PIN_SCK    (14) // p0.14 bordovii
-#define PIN_LRCK   (15) // p0.15 wire blue
-#define PIN_SDOUT  (16) // p0.16 wire red
-#define PAUSE_TIME          3000
+#define PIN_MCK    (37) // (13)no wire
+#define PIN_SCK    (38) // (14)p0.14 bordovii
+#define PIN_LRCK   (39) // (15)p0.15 wire blue
+#define PIN_SDOUT  (40) // (16)p0.16 wire red
+#define PAUSE_TIME 4000
 
 #define	NRF_I2S_STOP NRF_I2S->TASKS_START = 0;
 
