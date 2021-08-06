@@ -98,7 +98,7 @@ static void acelerometr_level_meas_timeout_handler(void* p_context)
 	{
 		uint32_encode(rand(), encoded_temperature);
 
-//			bsp_board_led_invert(BSP_LED_INDICATE_USER_LED2);	
+			bsp_board_led_invert(BSP_LED_INDICATE_USER_LED2);	
 //				err_code = temperature_value_update(&m_cus, encoded_temperature, sizeof(encoded_temperature));
 				err_code = temperature_value_update(&m_acel_cus, encoded_temperature, sizeof(encoded_temperature));
 			APP_ERROR_CHECK(err_code);
@@ -1032,6 +1032,30 @@ static void advertising_start(bool erase_bonds)
 	}
 }
 
+/**@brief The function for set sound play condition 
+	*/
+void set_play_sound_condition(uint8_t data)
+{
+	bsp_board_leds_off();
+	switch (data)
+		{
+		case 0x00:
+			NRF_I2S->TASKS_STOP = 1;
+			break;
+		case 0x01:
+			NRF_I2S->TASKS_STOP = 1;
+			bsp_board_led_on(BSP_BOARD_LED_2);	
+			sound_cuica_start();						
+			break;
+		case 0x02:
+			NRF_I2S->TASKS_STOP = 1;
+			bsp_board_led_on(BSP_BOARD_LED_3);
+			sound_claves_start();		
+			break;
+		default:
+			break;
+		}
+}
 
 /**@brief Function for application main entry.
  */
