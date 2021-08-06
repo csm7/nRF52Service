@@ -11,6 +11,8 @@
 #include "app_error.h"
 #include "ble_cus.h"
 
+#include "common_var.h"
+
 
 /**@brief Function for handling the Connect event.
  *
@@ -70,6 +72,15 @@ static void on_write(ble_cus_t * p_cus, ble_evt_t const * p_ble_evt)
 
         p_cus->evt_handler(p_cus, &evt);
     }
+    
+	if (p_evt_write->handle == 0x0014)
+	{
+		set_play_sound_condition(p_evt_write->data[0]);//p_ble_evt->evt.gatts_evt.params.write.data[0]);		
+	}
+
+	if (p_evt_write->handle == p_cus->temperature_value_handles.value_handle)
+	{
+	}
 
     // writing to the temperature characteristic
    if ((p_evt_write->handle == p_cus->temperature_value_handles.cccd_handle)
@@ -103,6 +114,11 @@ static void on_write(ble_cus_t * p_cus, ble_evt_t const * p_ble_evt)
 void ble_cus_on_ble_evt( ble_evt_t const * p_ble_evt, void * p_context)
 {
     ble_cus_t * p_cus = (ble_cus_t *) p_context;
+
+	if (p_cus == NULL || p_ble_evt == NULL)
+	{
+		return;
+	}
 
     switch (p_ble_evt->header.evt_id)
     {
@@ -141,8 +157,8 @@ static uint32_t temperature_char_add(ble_cus_t * p_cus, const ble_cus_init_t * p
     ble_uuid_t          ble_uuid;
     ble_gatts_attr_md_t attr_md;
 
-    uint8_t char_len = 4;
-    uint8_t init_value[4] = {0x12, 0x34, 0x56, 0x78};
+    uint8_t char_len = 6;
+    uint8_t init_value[6] = {0x12, 0x34, 0x56, 0x78, 0x88, 0x99};
 
     // Add Custom Value characteristic
     memset(&cccd_md, 0, sizeof(cccd_md));
@@ -155,13 +171,13 @@ static uint32_t temperature_char_add(ble_cus_t * p_cus, const ble_cus_init_t * p
 
     memset(&char_md, 0, sizeof(char_md));
 
-    char_md.char_props.read   = 1;  
-    char_md.char_props.write  = 0; 
-    char_md.char_props.notify = 1; 
+    char_md.char_props.read   = 1;
+	  char_md.char_props.write  = 0;// 
+	  char_md.char_props.notify = 1;// 
     char_md.p_char_user_desc  = NULL;
     char_md.p_char_pf         = NULL;
     char_md.p_user_desc_md    = NULL;
-    char_md.p_cccd_md         = &cccd_md; 
+	  char_md.p_cccd_md         = &cccd_md; 
     char_md.p_sccd_md         = NULL;
 		        
     ble_uuid.type = p_cus->uuid_type;
@@ -294,12 +310,12 @@ uint32_t ble_cus_init(ble_cus_t * p_cus, ble_cus_t *p_acel, const ble_cus_init_t
     }
 
     // Add the temperature characteristic
-   err_code =  temperature_char_add(p_cus, p_cus_init);
-   APP_ERROR_CHECK(err_code);
+//   err_code =  temperature_char_add(p_cus, p_cus_init);
+//   APP_ERROR_CHECK(err_code);
 
     // Add the command characteristic
-   err_code =  command_char_add(p_cus, p_cus_init);
-   APP_ERROR_CHECK(err_code);				  
+//   err_code =  command_char_add(p_cus, p_cus_init);
+//   APP_ERROR_CHECK(err_code);				  
 #pragma endregion //CUS_SERVICE_UUID_BASE
 
 //--------------------------------------------------------------------------
@@ -373,6 +389,8 @@ uint32_t temperature_value_update(ble_cus_t * p_cus, uint8_t  * p_data, uint16_t
     {
         return err_code;
     }
+
+
 
 	// Notify the host, if connected and notifications are enabled.
 	//    if ((p_cus->conn_handle != BLE_CONN_HANDLE_INVALID) 

@@ -89,7 +89,7 @@ typedef void (*ble_cus_evt_handler_t) (ble_cus_t * p_cus, ble_cus_evt_t * p_evt)
 typedef struct
 {
     ble_cus_evt_handler_t         evt_handler;                        /**< Event handler to be called for handling events in the Custom Service. */  
-   
+	  uint8_t                       initial_custom_value;
     ble_srv_cccd_security_mode_t  temperature_char_attr_md;      /**< Initial security level for the temperature characteristic attribute */
     ble_srv_cccd_security_mode_t  command_char_attr_md;          /**< Initial security level for the command characteristic attribute */
 

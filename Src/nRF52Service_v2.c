@@ -29,6 +29,7 @@ BLE_ADVERTISING_DEF(m_advertising);                                             
 /*Temperature timer*/
 APP_TIMER_DEF(m_ecelerometr_timer_id);
 
+uint8_t m_custom_value = 0;
 
 /**@brief Callback function for asserts in the SoftDevice.
  *

@@ -81,7 +81,6 @@ https://devzone.nordicsemi.com/nordic/short-range-guides/b/bluetooth-low-energy/
 #define DEAD_BEEF                       0xDEADBEEF                              /**< Value used as error code on stack dump, can be used to identify stack location on stack unwind. */
 
 
-
 static int16_t  resultBMA[4];
 
 //static uint8_t enableNotificationAcel = 0;
