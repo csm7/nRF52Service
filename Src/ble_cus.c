@@ -362,7 +362,7 @@ uint32_t ble_cus_init(ble_cus_t * p_cus, ble_cus_t *p_acel, const ble_cus_init_t
  * @return      NRF_SUCCESS on success, otherwise an error code.
  */
 
-uint32_t temperature_value_update(ble_cus_t * p_cus, uint8_t  * p_data, uint16_t  p_length)
+uint32_t acelerometer_value_update(ble_cus_t * p_cus, uint8_t  * p_data, uint16_t  p_length)
 {
     uint32_t   err_code;
 

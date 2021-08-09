@@ -141,13 +141,19 @@ void BMA280_Turn_Off(void)
 	*/
 }    
 
-void BMA280_Get_Data(int16_t * dest)
+void BMA280_Get_Data(int16_t * dest, uint8_t *raw_acel)
 {
 	uint8_t rawData[6];  // x/y/z accel register data stored here
 	uint8_t tempData; // temperature register data stored here
 
 
 	readBytes(BMA280_ADDRESS, BMA280_ACCD_X_LSB, rawData, 6);  // Read the 6 raw data registers into data array
+	raw_acel[0] = rawData[0];
+	raw_acel[1] = rawData[1];
+	raw_acel[2] = rawData[2];
+	raw_acel[3] = rawData[3];
+	raw_acel[4] = rawData[4];
+	raw_acel[5] = rawData[5];
 	dest[0] = ((int16_t)rawData[1] << 8) | rawData[0];         // Turn the MSB and LSB into a signed 14-bit value
 	dest[1] = ((int16_t)rawData[3] << 8) | rawData[2];
 	dest[2] = ((int16_t)rawData[5] << 8) | rawData[4];

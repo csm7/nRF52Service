@@ -19,7 +19,7 @@ extern "C" {
 	void BMA280_Turn_On_Fast(void);
 	void BMA280_Turn_On_Slow(void);
 	void BMA280_Turn_Off(void);
-	void BMA280_Get_Data(int16_t * dest);
+	void BMA280_Get_Data(int16_t * dest, uint8_t *raw_acel);
 	void BMA280_Calibrate(void);
 
 #ifdef __cplusplus

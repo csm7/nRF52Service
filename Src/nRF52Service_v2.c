@@ -78,31 +78,25 @@ static void pm_evt_handler(pm_evt_t const * p_evt)
 static void acelerometr_level_meas_timeout_handler(void* p_context)
 {
 	ret_code_t err_code;
-	uint8_t  encoded_temperature[4];
 	int32_t  raw_temperature = 0;     // signed 32 bit
 	int8_t   temperature = 0;     // signed 8 bit
 
 	UNUSED_PARAMETER(p_context);
 
-	BMA280_Get_Data(resultBMA);
-
-	NRF_LOG_INFO("Battery Level timeout event");
-
-	sd_temp_get(&raw_temperature);
-	// temperature is in 0.25C° units. watch out for negative values!
-	temperature = raw_temperature / 4;
-	uint32_encode(raw_temperature, encoded_temperature);
+	BMA280_Get_Data(resultBMA, acelerometer);
+	
+//	sd_temp_get(&raw_temperature);
+//	// temperature is in 0.25C° units. watch out for negative values!
+//	temperature = raw_temperature / 4;
+//	uint32_encode(raw_temperature, encoded_temperature);
 
 	
 	// Only send the battery level update if we are connected
 	if(m_conn_handle != BLE_CONN_HANDLE_INVALID)
 	{
-		uint32_encode(rand(), encoded_temperature);
-
-			bsp_board_led_invert(BSP_LED_INDICATE_USER_LED2);	
-//				err_code = temperature_value_update(&m_cus, encoded_temperature, sizeof(encoded_temperature));
-				err_code = temperature_value_update(&m_acel_cus, encoded_temperature, sizeof(encoded_temperature));
-			APP_ERROR_CHECK(err_code);
+		bsp_board_led_invert(BSP_LED_INDICATE_USER_LED2);	
+			err_code = acelerometer_value_update(&m_acel_cus, acelerometer, sizeof(acelerometer));
+				APP_ERROR_CHECK(err_code);
 	}
 }
 
@@ -781,43 +775,22 @@ static void button_event_handler(uint8_t pin_no, uint8_t button_action)
 
 			if (m_conn_handle != BLE_CONN_HANDLE_INVALID)
 			{
-				err_code = temperature_value_update(&m_cus, encoded_temperature, sizeof(encoded_temperature));
-				APP_ERROR_CHECK(err_code);
-			}
-			else 
-			{
-#ifdef UART_PRINTING_ENABLED
-				NRF_LOG_INFO("Ooops, you are not connected!");
-#endif
+//				err_code = acelerometer_value_update(&m_cus, encoded_temperature, sizeof(encoded_temperature));
+//				APP_ERROR_CHECK(err_code);
 			}
 
 		}
 		else if (button_action == APP_BUTTON_RELEASE) 
 		{
-#ifdef UART_PRINTING_ENABLED
-			NRF_LOG_INFO("button1 released.");
-#endif
 		}
 		break;
 
 	case BUTTON_2:
 		if (button_action == APP_BUTTON_PUSH) 
 		{
-			if (bsp_board_led_state_get(BSP_BOARD_LED_1))
-			{
-				bsp_board_led_off(BSP_BOARD_LED_1);
-			}
-			else 
-				bsp_board_led_on(BSP_BOARD_LED_1);
-#ifdef UART_PRINTING_ENABLED
-			NRF_LOG_INFO("button2 pressed.");
-#endif
 		}
 		else if (button_action == APP_BUTTON_RELEASE) 
 		{
-#ifdef UART_PRINTING_ENABLED
-			NRF_LOG_INFO("button2 released.");
-#endif
 		}
 		break;
 

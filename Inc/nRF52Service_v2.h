@@ -82,6 +82,7 @@ https://devzone.nordicsemi.com/nordic/short-range-guides/b/bluetooth-low-energy/
 
 
 static int16_t  resultBMA[4];
+static uint8_t  acelerometer[6];
 
 //static uint8_t enableNotificationAcel = 0;
 
